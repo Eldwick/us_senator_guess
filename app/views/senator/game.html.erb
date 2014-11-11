@@ -1,0 +1,9 @@
+<%= image_tag(@senator.image_url) %>
+<%= @senator.name %>
+<form>
+<input type="text" id="guess" placeholder="Guess the State">
+<button onclick="checkAnswer()">Check</button>
+</form>
+<script>
+var answer = "<%= @senator.state  %>"
+</script>
